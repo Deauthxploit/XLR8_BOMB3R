@@ -240,9 +240,9 @@ echo ""
 printf "\n"
 printf "   Press ctrl+c to quit ! \n"
 echo ""
-echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Else it will automatically stop after 5 min\e[93m"
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m It will not stop automatically \e[93m"
 echo ""
-echo -e "   \e[92m[\e[91m~\e[92m]\e[93m After sending 250 msgs and 50 calls !!\e[93m"
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Please don't misuse !!\e[93m"
 echo ""
 
 while read a; do
@@ -259,8 +259,9 @@ for i in {1..4}
 do bash headapis
 done
 
-for i in {1..27}
-do bash tailapis
+while true
+do 
+bash tailapis
 done
 
 exit 
